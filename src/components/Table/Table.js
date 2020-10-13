@@ -1,4 +1,5 @@
 import React from 'react';
+import numeral from "numeral";
 import './Table.css'
 
 const Table = ({countries}) => {
@@ -8,7 +9,7 @@ const Table = ({countries}) => {
         countries.map(({country, cases}, index) => (
           <tr key={index}>
             <td>{country}</td>
-            <td><strong>{cases}</strong></td>
+            <td style={{fontWeight: '700'}}>{numeral(cases).format("0,0")}</td>
           </tr>
         ))
       }

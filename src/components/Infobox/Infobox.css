@@ -1,3 +1,64 @@
 .infobox {
+    flex: 1;
+    cursor: pointer;
+    transition: all .3s ease-in !important;
+}
 
+.infobox:hover {
+    background-color: #f5f1f1;
+}
+
+.infobox:not(:last-child) {
+    margin-right: 10px;
+}
+
+.infobox__selected {
+    border-top: 10px solid greenyellow;
+}
+
+.infobox__red {
+    border-color: red;
+}
+
+.infobox__black {
+    border-color: black;
+}
+
+.infobox__cases-green {
+    color: green !important;
+}
+
+.infobox__cases-red {
+    color: red !important;
+}
+
+.infobox__cases-black {
+    color: black !important;
+}
+
+.MuiCardContent-root {
+    width: 100%;
+}
+
+.infobox__title {
+    text-align: center;
+    font-size: 1.5rem !important;
+}
+
+
+.infobox__cases {
+    color: #cc1034;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+
+.infobox__total {
+    color: #00adff !important;
+    font-weight: 700 !important;
+    font-size: 1.2rem !important;
+    margin-top: 15px !important;
+    text-align: center;
 }
